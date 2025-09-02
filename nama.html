@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+            background-image: url(foto1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+           height: 100vh;
+        }
+        .login{
+            background: white;
+            padding: 20px;
+            width: 300px;
+            margin: 16% auto;
+            border-radius: 7px;
+        }
+        input{
+            display: block;
+            width: 100%;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        .ui{
+            padding-bottom: 8px;
+            padding-top: 8px;
+            border-radius: 5px;
+            text-indent: 8px;
+            border: none;
+            background: rgb(236, 235, 235);
+        }
+        .ui:hover{
+            border: 1px solid blue;
+        }
+        .ui:focus{
+            outline: none;
+        }
+        .button{
+            background: rgb(209, 209, 250);
+            border-radius: 4px;
+            border: none;
+            width: 100%;
+            padding: 8px;
+        }
+        .button:hover{
+            background: rgb(126, 126, 241);
+            color: white;
+            cursor: pointer;
+        }
+        .checkbox:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   <div class="login">
+    <h1>Sign In</h1>
+    <p>atau <a href="register.html">Buat akun baru</a></p>
+    <form action="berhasil_login.html">
+        <input type="email" placeholder="Masukkan Email" class="ui" required="required">
+        <input type="password" placeholder="Masukkan Password" class="ui" required="required">
+        <p> <input type="checkbox" class="checkbox" style="width: 10px; display: inline-block;"> Ingat saya</p>
+        <button type="submit" class="button">LOGIN</button>
+    </form>
+   </div>
+
+</body>
+</html>
